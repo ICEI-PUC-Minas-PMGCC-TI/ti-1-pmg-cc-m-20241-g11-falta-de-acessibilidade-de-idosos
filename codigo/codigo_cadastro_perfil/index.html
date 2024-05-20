@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="fundoback">
+        <img src="img/fundo.jpg" alt="fundo">
+    </div>
+    <div class="container">
+        <div class="quadrado">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+            </div>
+        
+            <div class="perfilimg">
+                <img src="img/elder scroling.png" alt="logo">
+                <div class="perfilback">
+                    <h1>CADASTRO DE PERFIL</h1>
+                </div>
+            </div>
+            <form id="form-perfil">
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="inputId">Id</label>
+                        <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                    </div>
+                    <div class="col-sm-8">
+                        <label for="inputNome">Nome (*)</label>
+                        <input type="text" class="form-control" id="inputNome" required placeholder="Informe o nome">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-5">
+                        <label for="inputTelefone">Telefone (*)</label>
+                        <input type="text" class="form-control" id="inputTelefone" required placeholder="Telefone">
+                    </div>
+                    <div class="col-sm-7">
+                        <label for="inputEmail">E-mail do Responsável (*)</label>
+                        <input type="email" class="form-control" id="inputEmail" required placeholder="Informe o e-mail do responsável">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" placeholder="Informe a cidade" >
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputCategoria">Nível de Acessibilidade</label>
+                        <select class="form-control" id="inputCategoria">
+                            <option value="nivel1">Nível 1</option>
+                            <option value="nivel2">Nível 2</option>
+                            <option value="nivel3">Nível 3</option>
+                            <option value="nivel4">Nível 4</option>
+                            <option value="nivel5">Nível 5</option>                           
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
+                <div class="form-group text-center"> 
+                    <input type="button" class="btn btn-success" id="btnSalvar" value="Salvar">
+                </div>
+            </form>           
+            <table id="grid-perfis" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">Nível de Acessibilidade</th>
+                    </tr>
+                </thead>
+                <tbody id="table-perfis">
+                    <tr>
+                        <td scope="row">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
