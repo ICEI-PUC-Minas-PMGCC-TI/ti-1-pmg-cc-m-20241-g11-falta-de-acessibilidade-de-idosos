@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    overflow: hidden; 
+}
+
+.fundoback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.fundoback img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3b5998;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: rgb(245, 244, 244);
+    font-weight: bolder;
+}
+
+::placeholder {
+    color: lightskyblue !important;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: lightskyblue !important;
+}
+
+:-moz-placeholder {
+    color: lightskyblue !important;
+    opacity: 1;
+}
+
+.col-sm-4, #grid-perfis {
+    color: rgb(245, 244, 244);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(245, 244, 244);
+}
+
+.form-group{
+    color: rgb(245, 244, 244);
+}
+
+#msg {
+    height: 60px;
+}
+
+#grid-perfis tbody {
+    cursor: pointer;
+}
+
+.perfilimg {
+    text-align: center;
+}
+
+.perfilimg img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.perfilback {
+    background-color: rgb(174, 179, 179);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+}
