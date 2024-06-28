@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scripts.js">
+</head>
+<body>
+    <div class="header">
+        <img src="assets/images/logo.png" alt="Logo" class="logo">
+        <h1>Início</h1>
+        <span class="app-name">Whatsapp</span>
+        <button class="add-contact-btn">Adicionar Contato</button>
+    </div>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="avatar">Foto do Avatar:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                <button type="submit">Salvar Contato</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-list">
+        <div class="contact">
+            <div class="contact-info">
+                <img src="" alt="Avatar" class="avatar" id="avatar-${index}">
+                <span class="contact-name">${contact.name}</span>
+            </div>
+            <div class="contact-bar">
+                <input type="text" class="message-input" placeholder="Digite sua mensagem aqui..." id="message-${index}">
+                <button class="send-message-btn">
+                    <img src="assets/images/send-icon.png" alt="Enviar">
+                </button>
+            </div>
+            <div class="contact-actions">
+                <img src="assets/images/chat-icon.png" alt="Chat" class="icon">
+                <img src="assets/images/call-icon.png" alt="Call" class="icon">
+                <button class="edit-btn" data-contact-id="${index}">Editar</button>
+                <button class="delete-btn">Excluir</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

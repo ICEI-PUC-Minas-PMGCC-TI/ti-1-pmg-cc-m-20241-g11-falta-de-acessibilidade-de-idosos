@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências do Usuário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <h1>Início</h1>
+        </div>
+        <div class="header-center">
+            <span class="app-name">Preferências</span>
+        </div>
+        <button id="show-preferences-button">Exibir Preferências</button>
+    </div>
+    <div class="container">
+        <h1>Interesses</h1>
+        <p>Escolha as coisas que você gostaria de ver no seu feed:</p>
+        <div id="preferences-container"></div>
+        <button id="add-preference-button">+</button>
+        <button id="save-preferences-button">Salvar Preferências</button>
+        <form id="add-preference-form" class="hidden">
+            <input type="text" id="new-preference" placeholder="Adicionar nova preferência" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    <div id="selected-preferences-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Preferências Selecionadas</h2>
+            <div id="selected-preferences-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
