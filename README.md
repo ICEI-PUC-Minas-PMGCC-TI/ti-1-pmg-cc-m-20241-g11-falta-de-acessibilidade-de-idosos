@@ -14,6 +14,8 @@ No contexto atual, nota-se um crescimento significativo na população idosa. Es
 
 * João
 * Luciana
+* Pedro
+* Rommel
 
 ## Instruções de utilização
 
