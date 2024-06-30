@@ -106,11 +106,11 @@
                     </li>
                     <li><strong>Membros da equipe:</strong>
                       <ul>
-                        <li><a href="https://github.com/RonaldoBelo">Ronaldo Belo</a>
-                        <li><a href="https://github.com/pedrodois">Pedro Guimarães</a></li>
-                        <li><a href="https://github.com/Henripaecs">Henrique Paes</a></li>
-                        <li><a href="https://github.com/SvN31">Savio Faria</a></li>
                         <li><a href="https://github.com/cicrano">Bernado Umbelino</a></li>
+                        <li><a href="https://github.com/Henripaecs">Henrique Paes</a></li>
+                        <li><a href="https://github.com/pedrodois">Pedro Guimarães</a></li>
+                        <li><a href="https://github.com/RonaldoBelo">Ronaldo Belo</a>
+                        <li><a href="https://github.com/SvN31">Savio Faria</a></li>                        
                       </ul>
                     </li>
                   </ul>
@@ -266,9 +266,14 @@
                     </tr>
                       <tr>
                           <th scope="row">RF-003</th>
-                          <td>Assistente Virtual / Comando de Voz</td>
+                          <td>Prestação de serviços</td>
                           <td>MÉDIA</td>
                       </tr>
+                      <tr>
+                        <th scope="row">RF-004</th>
+                        <td>Contatos integrados</td>
+                        <td>MÉDIA</td>
+                    </tr>
                   </tbody>
                 </table>
 
@@ -376,12 +381,12 @@
                     </tr>
                     <tr>
                         <td>Hospedagem do site</td>
-                        <td>Heroku</td>
-                        <td><a href="https://XXXXXXX.herokuapp.com">https://XXXXXXX.herokuapp.com</a>
+                        <td>Replit</td>
+                        <td><a href="https://replit.com/~">https://XXXXXXX.herokuapp.com</a>
                     </tr>
                     <tr>
                         <td>Protótipo Interativo</td>
-                        <td>MavelApp ou Figma</td>
+                        <td>Figma</td>
                         <td><a href="https://www.figma.com/file/1HtcImIsF9vp5eL62wQQ8H/Figma-basics?type=design&node-id=1669%3A162202&mode=design&t=m5boxYdOqvSXKcIp-1">https://figma.com/inclusaoidosos</a>
                     </tr>
                 </tbody>
@@ -411,7 +416,15 @@
                   <img class="img-fluid" src="assets/images/exemplo-workflow.png" alt="">
                 </p>
               </div>
-              <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
+              <p>Controle de Versão
+                Estrutura do fluxo de trabalho no ambiente do GitHub.
+                Para fazer o controle de versão foi utilizado o Git, uma ferramenta muito usada na área de tecnologia e desenvolvimento de software. Sendo assim, é possível ter diferentes versões do código fonte ao mesmo tempo e mesmo assim é possível aplicar as modificações de maneira segura. Logo, foram utilizados alguns comandos para manter essa versão do código, como:
+                
+                Git branch = possibilita criar e gerenciar branchs
+                Git checkout = posssibilita alterar entre as diferentes branchs
+                Git merge = possibilita incorporar mudanças de um branch em outro
+                Git push = possibilita enviar as alterações locais para um repositório remoto
+                Git pull = permite atualizar local com alterações do repositório remoto</p>
             </section>
           </section>
           <hr class="divider">
@@ -423,8 +436,9 @@
               <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseSolucao">Info</button>
             </p>
             <div class="alert alert-warning collapse" role="alert" id="collapseSolucao">
-              <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.</p>
-              <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
+              <li>Preferências <p>Para facilitar a localização de conteúdos, teremos uma página que direcionará o usuário até o conteúdo de seu interesse.</p></li>
+              <li>Contatos <p>Para eliminar as dificuldades de enviar mensagens para contatos errados ou de não encontrar seus contatos mais frequentes, desenvolvemos uma página que salva os contatos favoritos. Assim, você poderá escrever sua mensagem diretamente no site, que encaminhará a mensagem para o WhatsApp da pessoa desejada.</p></li>
+              <li>Serviços <p>O idoso que precisa de um prestador de serviço de confiança poderá encontrar em nosso site uma aba onde encontrará profissionais qualificados prontos para ajudá-lo.</p></li>
             </div>
 
             <section id="ti_video">
@@ -445,8 +459,10 @@
               <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFuncionalidades">Info</button>
               </p>
               <div class="alert alert-warning collapse" role="alert" id="collapseFuncionalidades">
-                <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.</p>
-                <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
+                <li>Login de usuários <p>Cada usuário terá uma propria conta que o direcionara para os seus interesses.</p></li>
+                <li>Preferências <p>Cada usuário pora escolher os tópicos nos quais tem maio interesse.</p></li>
+                <li>Contatos <p>O Usuário podera colocar os seus contatos favoritos do WhatsApp em nossa tela para facilitar a forma de enviar suas mensagens.</p></li>
+                <li>Serviços <p>O site veirá integrado com um sistema de prestação de serviços, onde o usuário poderá encontrar um prestador de serviço para lhe ajudar.</p></li>
               </div>
 
               <section>
@@ -476,8 +492,47 @@
               </div>
 
               <section>
+                <h5>Estrutura de Dados - Usuários</h5>
+                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
+                <pre>
+                  {
+                    "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+                    "login": "admin",
+                    "senha": "123",
+                    "nome": "Administrador do Sistema",
+                    "email": "admin@abc.com"
+                  }
+                </pre>
+              </section>
+              <section>
+                <h5>Estrutura de Dados - Usuários Prestador de Serviço</h5>
+                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
+                <pre>
+                  {
+                    "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+                    "login": "admin",
+                    "senha": "123",
+                    "nome": "Administrador do Sistema",
+                    "email": "admin@abc.com"
+                  }
+                </pre>
+              </section>
+              <section>
+                <h5>Estrutura de Dados - Preferências</h5>
+                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
+                <pre>
+                  {
+                    "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+                    "login": "admin",
+                    "senha": "123",
+                    "nome": "Administrador do Sistema",
+                    "email": "admin@abc.com"
+                  }
+                </pre>
+              </section>
+              <section>
                 <h5>Estrutura de Dados - Contatos<span class="exemplo">EXEMPLO</span></h5>
-                <p>Contatos da aplicação</p>
+                <p>Contatos da aplicação</p>               
                 <pre>
                   {
                     "id": 1,
@@ -487,21 +542,6 @@
                     "email": "Sincere@april.biz",
                     "telefone": "1-770-736-8031",
                     "website": "hildegard.org"
-                  }
-                </pre>
-              </section>
-
-              <section>
-                <h5>Estrutura de Dados - Usuários<span class="exemplo">EXEMPLO</span></h5>
-                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
-                <pre>
-                  {
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    email: "admin@abc.com"
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    login: "admin"
-                    nome: "Administrador do Sistema"
-                    senha: "123"
                   }
                 </pre>
               </section>
@@ -524,18 +564,10 @@
                 </ul>
               </section>
 
-              <section>
-                <h5>Fonts:</h5>
-                <ul>
-                  <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span></li>
-                </ul>
-              </section>
-
-              <section>
                 <h5>Scripts:</h5>
                 <ul>
-                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span class="exemplo">EXEMPLO</span></li>
-                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Login - <a target="_blank" href="https://replit.com/@rommelpuc/JSONServer#index.js">https://replit.com/@rommelpuc</a></li>
+                  <li>WhatsApp - <a target="_blank" href="https://api.whatsapp.com/">https://api.whatsapp.com/</a></li>
                 </ul>
               </section>
             </section>
@@ -553,46 +585,39 @@
               <p>Apresente uma lista de perguntas e respostas comuns associadas ao projeto. Inclua perguntas como: (1) detalhes de acesso e uso do projeto; (2) informações sobre a instalação e configuração da aplicação; (3) questões sobre a manutenção da aplicação; (4) detalhes sobre a integração da aplicação com outros sistemas; (5) questões sobre a segurança da aplicação.</p>
             </div>
 
-            <span class="exemplo">EXEMPLO</span>
             <div class="row">
               <div class="col-lg-12">
                 <div class="accordion accordion-alterate arrow-right" id="popularTopics">
                   <div class="card">
                     <div class="card-header" id="heading1">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
-                          aria-expanded="false" aria-controls="collapse1">What does royalty free mean?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse1">Qual o intuito do site?</a> </h5>
                     </div>
                     <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
-                      <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged. </div>
+                      <div class="card-body"> O intuito do nosso site é proporcionar uma experiência digital mais acessível e amigável para os idosos. Buscamos 
+                        facilitar o acesso de pessoas mais velhas à tecnologia e à internet, oferecendo recursos, dicas e ferramentas que ajudem a superar barreiras e a 
+                        aproveitar os benefícios da era digital de maneira confortável e segura. </div>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header" id="heading2">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                          aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse2">Como funciona o site de acessibilidade para idosos?</a> </h5>
                     </div>
                     <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. </div>
+                      <div class="card-body"> O nosso site é projetado para ser intuitivo e fácil de navegar. Ele oferece uma interface amigável com 
+                        botões grandes, texto claro e opções de contraste ajustáveis para facilitar a leitura. Estamos sempre atualizando e melhorando nosso 
+                        conteúdo para garantir que todos tenham uma experiência positiva e enriquecedora ao visitar nosso site. </div>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header" id="heading3">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
-                          aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end
-                          products?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse3">Por que é importante adaptar tecnologias para idosos?</a> </h5>
                     </div>
                     <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                        essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna
-                        imperdiet. </div>
+                      <div class="card-body"> Adaptar tecnologias para idosos é crucial porque facilita o acesso a informações, serviços e comunicação digital. Com interfaces mais simples, 
+                        fontes maiores e funcionalidades intuitivas, os idosos podem se sentir mais confortáveis e independentes ao usar dispositivos e navegar na internet. </div>
                     </div>
                   </div>
                 </div>
