@@ -1,0 +1,29 @@
+{
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123456",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "user",
+      "senha": "123456",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    }
+  ],
+  "funcionarios": [
+    {
+      "id": "14f75a66-aaca-4765-9628-1f60485ad7d2",
+      "login": "admin",
+      "senha": "123456",
+      "nome": "admin",
+      "email": "admin@gmail.com"
+    }
+  ],
+  "servicos": [],
+  "pedidos_aceitos": []
+}

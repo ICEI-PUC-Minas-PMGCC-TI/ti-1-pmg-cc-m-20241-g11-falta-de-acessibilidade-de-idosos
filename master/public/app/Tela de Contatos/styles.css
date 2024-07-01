@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+}
+
+.header {
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+}
+
+.app-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100%;
+    color: #fff;
+}
+
+.contact-list {
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 45px;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.contact-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon {
+    width: 110px;
+    height: 110px;
+    margin-left: 85px;
+    cursor: pointer;
+}
+
+.call-icon {
+    position: relative;
+    left: 10px;
+}
+
+.contact-bar {
+    display: flex;
+    align-items: center;
+    background-color: #a3b8d9;
+    border-radius: 35px;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 160px;
+    position: relative;
+}
+
+.message-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.send-message-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.send-message-btn img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cadastro-link {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#cadastro {
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: none; /
+}
+
+.microphone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.microphone-icon {
+    width: 60px;
+    height: 60px;
+    color: blue;
+}
+
+.add-contact-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #2a4375; 
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 80%;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.add-contact-btn:hover {
+    background-color: #45a049; 
+    border-color: #162237; 
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    transition: opacity 0.3s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close-btn {
+    color: #aaa;    
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#contact-form input[type="text"]:focus {
+    border-color: #3b5998;
+}
+
+#contact-form input[type="file"] {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 95%;
+    margin: 10px 0;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+    transform: scale(1.015);
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.edit-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 24px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background-color: #3b5998;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .app-name {
+        font-size: 1.5em;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .add-contact-btn {
+        width: 80%;
+        padding: 10px;
+        font-size: 1em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-name {
+        font-size: 1.2em;
+    }
+
+    .contact-bar {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message-input {
+        font-size: 1em;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-actions {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+        position: static;
+        transform: none;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-left: 0;
+    }
+
+    .edit-btn, .delete-btn {
+        width: 45%;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .send-message-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .send-message-btn img {
+        width: 40px;
+        height: 40px;
+        right: 0;
+        position: static;
+        transform: none;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+        padding: 10px;
+    }
+
+    #contact-form input[type="text"], #contact-form input[type="file"] {
+        width: calc(100% - 10px);
+    }
+
+    .call-icon {
+        position: relative;
+        left: 10px;
+    }
+}
